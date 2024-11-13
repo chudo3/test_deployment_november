@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #FAFAFA;
+}
+
+* {
+    font-family: "Inter", sans-serif;
+    font-synthesis: none !important;
+    color: #2D2D2D;
+}

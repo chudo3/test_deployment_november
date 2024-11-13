@@ -1,0 +1,13 @@
+import { useEffect } from "react";
+
+export const useViewportHeight = () => {
+  useEffect(() => {
+    const setViewportHeight = () => {
+      const vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    };
+
+    setViewportHeight();
+
+  }, []);
+};

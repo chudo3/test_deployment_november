@@ -1,0 +1,7 @@
+.metrics-page-layout__content-wrapper {
+    min-height: calc(100vh - 210px);
+}
+
+.metrics-page-layout__content-wrapper_mobile {
+    min-height: calc(100vh - 400px);
+}

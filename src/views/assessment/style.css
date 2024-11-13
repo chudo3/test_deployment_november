@@ -1,0 +1,16 @@
+.assessment-controls_mobile {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    @apply p-3 gap-3;
+}
+
+.assessment-controls {
+    @apply md:flex md:flex-row md:p-6 md:border-t md:justify-between md:w-full md:gap-3 md:pb-4;
+}
+
+.assessment-controls__submit {
+    grid-area: 1 / 1 / auto / 3;
+}

@@ -1,0 +1,15 @@
+.app-header_mobile {
+    display: grid;
+    grid-template-rows: repeat(2, 60px);
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-header {
+    @apply md:flex md:flex-row md:justify-between md:items-center md:p-4;
+}
+
+.app-header__logo {
+    grid-area: 1 / 1 / auto / 3;
+}

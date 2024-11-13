@@ -1,0 +1,79 @@
+/*excellent*/
+/*done*/
+.happyverse-slider_excellent {
+    background: #21871e;
+}
+
+.range-slider_excellent .range-slider__range {
+    background: rgba(36, 136, 29, 0.8);
+}
+
+.range-slider_excellent .range-slider__thumb {
+    background: #05AC00;
+}
+
+/*Ok*/
+/*done*/
+
+.happyverse-slider_ok {
+    background: #74d454;
+}
+
+.range-slider_ok .range-slider__range {
+    background: rgba(54, 163, 37, 0.86);
+}
+
+.range-slider_ok .range-slider__thumb {
+    background: #27b100;
+}
+
+/*Growth area*/
+/*done*/
+
+.happyverse-slider_growth {
+    background: #e5f716;
+}
+
+.range-slider_growth .range-slider__range {
+    background: rgba(198, 216, 20, 0.8);
+}
+
+.range-slider_growth .range-slider__thumb {
+    background: #C2D100;
+}
+
+/*Pain*/
+
+.happyverse-slider_pain {
+    background: #ffb6c1;
+}
+
+.range-slider_pain .range-slider__range {
+    background: #cf98a0;
+}
+
+.range-slider_pain .range-slider__thumb {
+    background: #cc9ca3;
+}
+
+/*Emergency*/
+
+.happyverse-slider_emergency {
+    background: #f00;
+}
+
+.range-slider_emergency .range-slider__range {
+    background: rgba(255, 0, 0, .8);
+}
+
+.range-slider_emergency .range-slider__thumb {
+    background: #b80000;
+}
+
+
+/* Gradient overriding */
+
+.svg-remove-gradient stop {
+    stop-color: black !important;
+    stop-opacity: 1 !important;
+}

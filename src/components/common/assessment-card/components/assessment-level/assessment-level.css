@@ -1,0 +1,31 @@
+/*excellent*/
+/*done*/
+.assessment-level__info_excellent {
+    background: #21871e;
+}
+
+/*Ok*/
+/*done*/
+
+.assessment-level__info_ok {
+    background: #74d454;
+}
+
+/*Growth area*/
+/*done*/
+
+.assessment-level__info_growth {
+    background: #e5f716;
+}
+
+/*Pain*/
+
+.assessment-level__info_pain {
+    background: #ffb6c1;
+}
+
+/*Emergency*/
+
+.assessment-level__info_emergency {
+    background: #f00;
+}
