@@ -27,8 +27,6 @@ interface Props {
     children?: ReactNode;
     controls?: ReactNode;
     onClickBack?: () => void;
-    onRemoveFile?: () => void;
-    onPickFile?: (files: File) => void;
     title: string;
     onClickHint?: () => void;
 }

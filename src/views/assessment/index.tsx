@@ -38,7 +38,7 @@ const AssessmentView = () => {
         prevLabel: string | null,
     }>(getAssessmentPathSiblings(location.pathname));
     const [formTouched, setFormTouched] = useState(false)
-    const [file, setFile] = useState<File | null>(null);
+
     const [hints, setHints] = useState<AssessmentHintItem[]>([]);
 
     useEffect(() => {
@@ -87,7 +87,7 @@ const AssessmentView = () => {
                 assessment: data.assessment,
                 params: data.params,
                 accessToken: auth.user.stsTokenManager.accessToken,
-                file,
+
             });
 
             if (links.next) navigate(links.next)
@@ -145,8 +145,7 @@ const AssessmentView = () => {
                     setHints,
                 }}/>
             }
-            onPickFile={(f) => setFile(f)}
-            onRemoveFile={() => setFile(null)}
+
             controls={<div
                 className="assessment-controls_mobile assessment-controls">
 
