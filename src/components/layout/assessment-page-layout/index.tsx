@@ -10,13 +10,13 @@ import {
 // @ts-expect-error
 import Files from "react-files";
 import Button from "@/src/components/common/button";
-import FileData from "@/src/components/common/file-data";
+
 import {useLocation} from "react-router-dom";
-import toast from "react-hot-toast";
+
 import BaseLayout from "@/src/components/layout/base-layout";
 
 import InfoIcon from '../../../assets/icons/info.svg?react'
-import FileIcon from '../../../assets/icons/file.svg?react';
+
 import LeftArrowIcon from '../../../assets/icons/black-chevron-left.svg?react';
 
 import {getSvgForTitle} from "../../../utils/svgUtils";
@@ -41,7 +41,7 @@ const AssessmentPageLayout = ({
                                   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
                                   // @ts-expect-error
                               }: Props, ref) => {
-    const [files, setFiles] = useState<Files>([]);
+    const [setFiles] = useState<Files>([]);
     const location = useLocation();
     const backButtonRef = useRef(null);
 
@@ -52,18 +52,12 @@ const AssessmentPageLayout = ({
     useEffect(() => {
         //     cleanup on change location
         setFiles([]);
-        onRemoveFile?.()
         window.scrollTo(0, 0);
     }, [location]);
 
-    const handleChange = (files: File[]) => {
-        setFiles(files);
-        onPickFile?.(files[0]);
-    }
-    const handleRemoveFile = () => {
-        setFiles([]);
-        onRemoveFile?.();
-    }
+
+
+
 
     return (
         <BaseLayout headerLeftContent={<div
@@ -76,32 +70,6 @@ const AssessmentPageLayout = ({
             />
 
         </div>}
-                    headerRightContent={<div className='files md:min-w-64'>
-                        {files.length ?
-                            <div className='selected-file flex flex-row gap-2'>
-                                <FileData file={files.at(0)}/>
-                                <Button label='X'
-                                        className='md:p-2 md:!px-4 md:text-base !px-3 text-sm'
-                                        onClick={handleRemoveFile}></Button>
-                            </div>
-                            : <Files
-                                className='files-dropzone'
-                                onChange={handleChange}
-                                accepts={['.pdf', '.doc', '.docx']}
-                                maxFileSize={5242880}
-                                minFileSize={0}
-                                clickable
-                                onError={(e: {
-                                    code: string,
-                                    message: string
-                                }) => toast.error(e.message)}
-                            >
-                                <Button prefix={<FileIcon/>}
-                                        label='Add file (.pdf, .docx, <5 Mb)'
-                                        className='md:text-base text-sm max-h-[38px] md:max-h-[42px] !px-2'
-                                />
-                            </Files>}
-                    </div>}
                     footer={controls}
         >
             <main
