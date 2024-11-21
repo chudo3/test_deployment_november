@@ -37,8 +37,6 @@ const AssessmentPageLayout = ({
                                   title,
                                   controls,
                                   onClickBack,
-                                  onPickFile,
-                                  onRemoveFile,
                                   onClickHint,
                                   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
                                   // @ts-expect-error
