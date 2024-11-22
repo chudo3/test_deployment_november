@@ -3,11 +3,10 @@ import {
     ReactNode,
     useEffect,
     useImperativeHandle,
-    useRef,
-    useState
+    useRef
 } from "react";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-expect-error
+
 
 import Button from "@/src/components/common/button";
 import {useLocation} from "react-router-dom";
