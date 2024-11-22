@@ -70,7 +70,7 @@ const AssessmentView = () => {
         e.preventDefault();
 
         try {
-            if (!auth.user) throw new Error('User must be logged in!');
+            if (!auth.user) throw new Error('User must be logged in!!');
 
             await openConfirmationModal({
                 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
