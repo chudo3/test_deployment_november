@@ -31,12 +31,12 @@ CONTENT_USER_NOTIFICATION = \
     """
 Hey!
 \nIt's time for your weekly check-in! Keeping track of your progress is key to reaching your personal goals and improving your well-being.
-\n\n<happyverse link>
+\n\n<link>
 \n\nEvery small step helps, and we're here to support you on your journey to a healthier, happier you.
 \nDon't forget—consistent check-ins will help us provide you with even more tailored improvement plans!
 \nLooking forward to seeing your progress!
 \n\nBest regards,
-\nThe Happyverse Team
+\nThe Health Spectrum Team
 \n\n<a href="<unsubscribe_link>">Unsubscribe from the newsletter</a>
 """
 
@@ -106,15 +106,15 @@ GEMINI_MODEL = "gemini-1.5-pro"
 MAX_TOKEN_FOR_GEMINI = 512000
 
 # register_with_google.py
-SUBJECT_WELCOME = 'Welcome to Happyverse!'
+SUBJECT_WELCOME = 'Welcome!'
 CONTENT_WELCOME = \
     """
 Congratulations!
-\n\nYou've successfully registered with Happyverse. We're excited to have you on board as you begin your journey toward personal growth and well-being.
+\n\nYou've successfully registered with Health Spectrum. We're excited to have you on board as you begin your journey toward personal growth and well-being.
 \nWhat's next?
 \n    - Explore the categories available within the app.
 \n    - Receive your personalized improvement plans directly to your email within minutes!
-\n\nWelcome to Happyverse!
+\n\nWelcome to Health Spectrum!
 
 """
 
@@ -138,7 +138,7 @@ CONTENT_LLM_PART_2 = \
     """
 \n\nThank you for using our service, and we encourage you to explore other categories within the app to further improve your lifestyle! 
 \n\nBest regards,
-\nThe Happyverse Team
+\nThe Health Spectrum Team
 """
 
 # Moduls list
