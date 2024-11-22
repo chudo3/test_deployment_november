@@ -106,7 +106,7 @@ GEMINI_MODEL = "gemini-1.5-pro"
 MAX_TOKEN_FOR_GEMINI = 512000
 
 # register_with_google.py
-SUBJECT_WELCOME = 'Welcome!'
+SUBJECT_WELCOME = 'Welcome to Health Spectrum!'
 CONTENT_WELCOME = \
     """
 Congratulations!
