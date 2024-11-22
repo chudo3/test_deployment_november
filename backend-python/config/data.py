@@ -137,7 +137,7 @@ Dear user,
 CONTENT_LLM_PART_2 = \
     """
 \n\nThank you for using our service, and we encourage you to explore other categories within the app to further improve your lifestyle! 
-\n\nBest regards,
+\n\nBest regards ,
 \nThe Health Spectrum Team
 """
 
