@@ -20,7 +20,7 @@ import {AxiosError} from "axios";
 import openConfirmationModal from "@/src/components/modals/confirm-modal";
 import {useBackdrop} from "@/src/hooks/use-backdrop.ts";
 import openInfoModal from '@/src/components/modals/info-modal';
-import ThankYou from "@/src/components/thankyou/ThankYou.tsx";
+
 
 import "./style.css";
 
