@@ -12,6 +12,8 @@ import BackdropProvider from "@/src/context/backdrop.context.tsx";
 import UnsubView from "@/src/views/unsubscribe";
 import MainView from "@/src/views/main";
 import SubscribeView from "@/src/views/subscribe";
+import ThankYou from "@/src/components/thankyou/ThankYou.tsx";
+
 
 
 const root = ReactDOM.createRoot(
@@ -32,10 +34,8 @@ const router = createBrowserRouter([
             {path: 'health', element: <HealthForm/>},
 
         ]
-    }, {
-        path: 'unsubscribe',
-        element: <UnsubView/>
-    }
+    }, {path: 'unsubscribe',  element: <UnsubView/>},
+    {path: '/thankyou', element: <ThankYou/>}
 ]);
 
 root.render(

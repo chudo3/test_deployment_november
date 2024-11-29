@@ -20,6 +20,7 @@ import {AxiosError} from "axios";
 import openConfirmationModal from "@/src/components/modals/confirm-modal";
 import {useBackdrop} from "@/src/hooks/use-backdrop.ts";
 import openInfoModal from '@/src/components/modals/info-modal';
+import ThankYou from "@/src/components/thankyou/ThankYou.tsx";
 
 import "./style.css";
 
@@ -88,7 +89,8 @@ const AssessmentView = () => {
                 accessToken: auth.user.stsTokenManager.accessToken
             });
 
-            if (links.next) navigate(links.next)
+            //if (links.next) navigate(links.next)
+            if (links.next) navigate("/thankyou");
 
 
         } catch (e) {

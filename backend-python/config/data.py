@@ -25,12 +25,12 @@ ADD_MID_TEXT = "Latest user data: "
 MIN_TIME_BETWEEN_REQUESTS = 5  # Time within which new requests for this uid + module_name are not accepted
 
 # notification.py
-TIME_FOR_NOTIFY = 7  # Notify the user every TIME_FOR_NOTIFY DAYS
-SUBJECT_USER_NOTIFICATION = "Time for Your Weekly Check-In!"
+TIME_FOR_NOTIFY = 30  # Notify the user every TIME_FOR_NOTIFY DAYS
+SUBJECT_USER_NOTIFICATION = "Time for Your Monthly  Check-In!"
 CONTENT_USER_NOTIFICATION = \
     """
 Hey!
-\nIt's time for your weekly check-in! Keeping track of your progress is key to reaching your personal goals and improving your well-being.
+\nIt's time for your monthly check-in! Keeping track of your progress is key to reaching your personal goals and improving your well-being.
 \n\n<link>
 \n\nEvery small step helps, and we're here to support you on your journey to a healthier, happier you.
 \nDon't forget—consistent check-ins will help us provide you with even more tailored improvement plans!
