@@ -6,7 +6,7 @@ load_dotenv()
 SERVICE_ACCOUNT_PATH = os.getenv("SERVICE_ACCOUNT_PATH")
 
 # send_email.py
-GMAIL_USER = "Health Spectrum <admin@happyverse.ai>"
+GMAIL_USER = "Health Spectrum  <admin@happyverse.ai>"
 GMAIL_APP_PASSWORD = os.getenv("GMAIL_APP_PASSWORD")
 
 # media_to_storage.py
