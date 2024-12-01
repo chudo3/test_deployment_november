@@ -77,7 +77,7 @@ const AssessmentView = () => {
                 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
                 // @ts-expect-error
                 title: "Your improvement plan is ready",
-                label: links.next ? "Click «Send to email» to receive it via your email and proceed to the next category" : "Click «Send to email» to receive it via your email",
+                label: links.next ? "Click «Send to email» to receive it via your email" : "Click «Send to email» to receive it via your email",
                 confirmButtonText: 'Send to email',
                 cancelButtonText: 'Cancel'
             })
