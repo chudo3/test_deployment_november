@@ -2,8 +2,12 @@ from fastapi import HTTPException
 import smtplib
 from email.message import EmailMessage
 from email.mime.text import MIMEText
-from config.data import GMAIL_APP_PASSWORD, GMAIL_USER
+
 import markdown2
+
+GMAIL_USER = "Health  Spectrum  <dmitry.maxcs6440@gmail.com>"
+#GMAIL_APP_PASSWORD = os.getenv("GMAIL_APP_PASSWORD")
+GMAIL_APP_PASSWORD = "Klass2024!"
 
 # Function to send email
 def send_email_to_user(email_address, subject, content):

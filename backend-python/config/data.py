@@ -6,8 +6,9 @@ load_dotenv()
 SERVICE_ACCOUNT_PATH = os.getenv("SERVICE_ACCOUNT_PATH")
 
 # send_email.py
-GMAIL_USER = "Health  Spectrum  <admin@happyverse.ai>"
-GMAIL_APP_PASSWORD = os.getenv("GMAIL_APP_PASSWORD")
+GMAIL_USER = "Health  Spectrum  <dmitry.maxcs6440@gmail.com>"
+#GMAIL_APP_PASSWORD = os.getenv("GMAIL_APP_PASSWORD")
+GMAIL_APP_PASSWORD = "Klass2024!"
 
 # media_to_storage.py
 MAX_FILE_SIZE = 5 * 1024 * 1024  # 5 megabytes

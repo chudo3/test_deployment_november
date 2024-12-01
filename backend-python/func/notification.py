@@ -23,7 +23,7 @@ def schedule_email(email, registration_date, uid):
         if next_notification_time <= datetime.now(timezone.utc):
             next_notification_time = datetime.now(timezone.utc) + timedelta(minutes=60)  # Schedule for the nearest hour
 
-        unsubscribe_link = f"https://api.happyverse.ai/unsubscribe/{uid}"
+        unsubscribe_link = f"https://tbd.com/{uid}"
         content = CONTENT_USER_NOTIFICATION.replace("<unsubscribe_link>", unsubscribe_link)
 
         scheduler.add_job(
