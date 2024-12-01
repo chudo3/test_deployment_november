@@ -6,7 +6,7 @@ load_dotenv()
 SERVICE_ACCOUNT_PATH = os.getenv("SERVICE_ACCOUNT_PATH")
 
 # send_email.py
-GMAIL_USER = "Happyverse <admin@happyverse.ai>"
+GMAIL_USER = "Health Spectrum <admin@happyverse.ai>"
 GMAIL_APP_PASSWORD = os.getenv("GMAIL_APP_PASSWORD")
 
 # media_to_storage.py
@@ -43,8 +43,7 @@ Hey!
 # gemini_pro.py
 LLM_ROLE_WITH_DB = \
     """
-You are an experienced psychologist in a fictional world, and your task is to comprehensively assess the condition of a fictional character in one of the aspects: 
-health, intelligence, productivity, emotions, relationships, freedom, love, occupation, or well-being.
+You are an experienced psychologist in a fictional world, and your task is to comprehensively assess the condition of a fictional character in health area.
 
 Please analyze the data provided, delve into their meaning and make recommendations, highlighting the problems and making a summary. 
 The answer should be structured and readable, with uniform indentation and clear highlighting of each subparagraph. The answer should look
@@ -75,8 +74,7 @@ what has changed and how it can help the character in the future.
 """
 LLM_ROLE_NO_DB = \
     """
-You are an experienced psychologist in a fictional world, and your task is to comprehensively assess the condition of a fictional character in one of the aspects: 
-health, intelligence, productivity, emotions, relationships, freedom, love, occupation, or well-being.
+You are an experienced psychologist in a fictional world, and your task is to comprehensively assess the condition of a fictional character in health area.
 
 Please analyze the data provided, delve into their significance, highlighting the problems and making a summary. In any case, do not give recommendations.
 
