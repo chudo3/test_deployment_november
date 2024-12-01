@@ -16,11 +16,11 @@ def email_to_db(email_data: dict):
         email = email_data.email
         email_ref = db.collection("emails").document(email)
 
-        # Проверка, существует ли уже email
+
         if email_ref.get().exists:
             raise HTTPException(status_code=400, detail="Email already exists")
 
-        # Добавление email в базу данных
+
         email_ref.set({
             "dateAdded": datetime.now(timezone.utc).isoformat()
         })
