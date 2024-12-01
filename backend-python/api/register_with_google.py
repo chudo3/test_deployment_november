@@ -27,7 +27,7 @@ def register(authorization: str = Header(None)):
             raise HTTPException(status_code=400, detail='Email not found in token')
 
         # Send welcome email
-        send_email_to_user(email, 'Welcome to Health Spectrum!', CONTENT_WELCOME)
+        #send_email_to_user(email, 'Welcome to Health Spectrum!', CONTENT_WELCOME)
 
         # Schedule email
         schedule_email(email, reg_date_time, uid)
